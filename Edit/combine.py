@@ -2,11 +2,11 @@ import ffmpeg
 import requests
 import json
 import os
-from eleven_keys import XI, ANTONI
+from . import eleven_keys
 # Define constants for the script
 CHUNK_SIZE = 1024  # Size of chunks to read/write at a time
-XI_API_KEY = XI  # Your API key for authentication
-VOICE_ID = ANTONI # ID of the voice model to use
+XI_API_KEY = eleven_keys.XI  # Your API key for authentication
+VOICE_ID = eleven_keys.ANTONI # ID of the voice model to use
 TEXT_TO_SPEAK = "Am I the asshole for saying it's my birthday over and over again?"  # Text you want to convert to speech
 OUTPUT_PATH = "output.mp3"  # Path to save the output audio file
 
