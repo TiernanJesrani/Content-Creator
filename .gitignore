@@ -2,5 +2,6 @@ unreal_speech_keys.py
 eleven_keys.py
 openai_keys.py
 clips
-Template.png
 tiktoks
+*.mp4
+*.mov
