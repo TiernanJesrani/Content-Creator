@@ -17,7 +17,7 @@ def create_tiktoks(num_videos):
         #get random number for video
         clip_num = random.randrange(1, 8)
         #first we create the audio for the video
-        #audio.create_audio(text)
+        audio.create_audio(text)
         #then we get the words with associated timestamps
         words = subs.get_transcript_words()
         #then we calculate the delay for the subtitles to start
