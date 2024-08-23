@@ -8,7 +8,7 @@ def get_posts(num_posts):
         user_agent=reddit_keys.USER_AGENT,
     )
 
-    AITA_sub = reddit.subreddit("AmItheAsshole").top(time_filter='week', limit=100)
+    AITA_sub = reddit.subreddit("AmItheAsshole").top(time_filter='month', limit=100)
 
     submissions = {}
 

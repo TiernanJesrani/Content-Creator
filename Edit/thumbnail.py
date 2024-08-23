@@ -24,7 +24,7 @@ def create_thumbnail(title):
 def add_thumb(video_path, thumbnail_path, duration):
     video = editor.VideoFileClip(video_path)
 
-    thumbnail = editor.ImageClip(thumbnail_path).set_start(0).set_duration(duration).set_pos(("center","center")).resize(height=350)
+    thumbnail = editor.ImageClip(thumbnail_path).set_start(0).set_duration(duration).set_pos(("center","center")).resize(height=250)
 
     final = editor.CompositeVideoClip([video, thumbnail])
     final.write_videofile("temp_vid_thumb.mp4")
