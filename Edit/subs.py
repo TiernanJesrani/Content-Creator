@@ -1,6 +1,6 @@
 from moviepy import editor
 from openai import OpenAI
-import openai_keys
+from . import openai_keys
 import os
 from datetime import timedelta
 from moviepy.video.tools.subtitles import SubtitlesClip
